@@ -1,0 +1,141 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Yuan}{Cao}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{University of Science and Technology of China, 96 Jinzhai Road}{230026 Hefei}{China}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+86~18255111358}                   % optional, remove / comment the line if not wanted
+\phone[fixed]{+86~(755)~83180595}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{caoyuan@mail.ustc.edu.cn}                               % optional, remove / comment the line if not wanted
+\homepage{home.ustc.edu.cn/~caoyuan}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Personal Information}
+\cvdoubleitem{Birth Date}{Apr 02 1996}{Sex}{Male}
+\cvitem{Major}{Condense Matter Physics}
+
+\section{Education}
+\cventry{2010--Now}{B.Sc}{University of Science and Technology of China(USTC)}{Hefei}{\textit{Senior year}}{}
+
+\section{Academic Performance}
+\cvdoubleitem{Overall GPA}{\emph{4.06}/4.3}{Core courses GPA}{\emph{4.24}/4.3}
+\cvitem{Rank}{}
+\begin{itemize}
+    \item 1/40 in Special Class for Gifted Young
+    \item 1/27 in Jici Yan Special Class for Physics
+    \item 2/54 in students of Applied Physics
+\end{itemize}
+
+\section{Standard Tests}
+\cvitem{GRE General Test}{161(Verbal) + 170(Quantitative) + 4.5(Analytical Writing)}
+\cvitem{TOEFL}{29(Reading) + 25(Listening) + 26(Speaking) + 30(Writing) = 110}
+\cvitem{IETLS}{8.0(Listening) + 9.0(Reading) + 6.5(Writing) + 6.0(Speaking) = 7.5(Overall)\newline{}}
+\cvitem{GRE Chemistry Subject Test}{910 (97\% percentage)}
+\cvitem{GRE Physics Subject Test}{990 (94\% percentage)}
+
+
+\section{Computer Skills}
+\cvlistdoubleitem{C/C++/Java}{\LaTeX}
+\cvlistdoubleitem{Perl/Python/PHP}{Simple web design}
+\cvlistitem{MATLAB,Labview}
+
+\section{Publications}
+\cvlistitem{\emph{Formation of Hexagonal Pattern of Ferrofluid in Magnetic Field}, Journal of Magnetism and Magnetic Materials (1\textsuperscript{st} arthor, accepted on Nov 18, 2013)}
+
+\section{Honors}
+\subsection{Scholarships}
+\cvlistdoubleitem{2010 Outstanding Freshmen's Scholarship}{2011 National Scholarship}
+\cvlistdoubleitem{2012 National Scholarship}{2013 Guo Moruo Scholarship (Highest honor for a USTC student)}
+
+\section{Research Experience}
+\subsection{In University of Science and Technology of China}
+\cventry{Mar 2012--Now}{Changgan Zeng's group}{Group of Prof. Zeng}{}{}{Joined the group of Prof. Zeng as undergraduate. Learning a lot about the frontier of graphene and manganese oxide research.}
+
+\cventry{Oct-Dec, 2012}{Project}{Fabrication of simple graphene device}{}{}{This is a class project led by me and finished with four other students. In this work we successfully fabricate some simple graphene-based devices such as FETs and photodiodes, with limited lab equipments provided by Department of physics experiment education in USTC.}
+
+\cventry{Mar 2013--Now}{Under the supervision of Prof. Zejun Ding}{Numerical simulation of ferrofluid topology in magnetic field}{}{}{This work is a continuation of a project in Computing Physics class by Prof. Ding. The purpose is to use finite element method to compute the formation of patterns in ferrofluid under magnetic field. A paper on this work has been accepted by Journal of Magnetism and Magnetic Materials. }
+
+\cventry{Sep 2013--Now}{Under the supervision of Prof. Aidi Zhao}{Fabrication of super-capacitor and circuits using photoreduction of graphene oxide}{}{}{This project is funded by National Innovation Fund. The purpose is to print super-capacitor, batteries and electronic circuit based on photoreducted graphene oxide.}
+\subsection{Visit and Exchange Programs}
+%\cventry{Jun 2011}{Visiting}{Visiting of Beijing National Laboratory of Condense Physics}{Beijing, China}{}{Visited a group in China Academy of Sciences which is interested in single-electron transistor, Kondo effect and so on.}
+
+%\cventry{Nov 2012}{Visiting}{Visiting of Shanghai Synchrotron Radiation Facility}{Shanghai, China}{}{}
+
+\cventry{Jun--Aug, 2012}{Shawn McKee's group}{Research Experience for Undergraduates(REU) Program}{Ann Arbor, Michigan, US}{}{Managing networking for US-ATLAS (Computation grid for ATLAS detector in LHC of CERN), developing alerting system for the network. Part of the work was later integrated into a new version of perfSONAR-PS network monitoring system.}
+
+\cventry{Jul--Sep, 2013}{Yulin Chen's group}{Summer program in Oxford University}{Oxford, UK}{}{Two months' work experience in Diamond synchrotron facility beamline. Developing control, data analysis and data visualization software for beamline. Participated in several ARPES(Angle-Resolved Photoemission Spectroscopy) experiments together with Dr. Chen's group.}
+
+\section{Competitions}
+\cvlistitem{ACM International Collegiate Programming Contest, Regional. 3$\times$Silver + 1$\times$Bronze medal}
+\cvlistitem{Robogame competition of USTC. 3\textsuperscript{rd} place}
+
+\section{Research Interest}
+\cvlistitem{Graphene and similar 2-D electronic systems}
+\cvlistitem{Nanotechnology and nanomaterials}
+\cvlistitem{Topological insulator}
+\section{Interests besides physics}
+\cvlistdoubleitem{Electronics}{Computer programming}
+\cvlistitem{Chemistry}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
